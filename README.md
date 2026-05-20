@@ -46,7 +46,8 @@ npm run dev     # http://localhost:5173
 | DELETE | `/api/leads/:id`      | Delete lead (admin) |
 | PATCH  | `/api/leads/:id/status` | Update status (admin & assigned agent) |
 | PATCH  | `/api/leads/:id/assign` | Assign (admin)   |
-| GET    | `/api/dashboard`      | Stats & activities |
+| GET    | `/api/dashboard`      | Stats |
+| GET    | `/api/dashboard/activities` | Paginated activities (`?page=1&limit=10`) |
 | GET    | `/api/users/team`     | Team for assignment |
 | GET    | `/api/users`          | All users (admin)   |
 | POST   | `/api/users`          | Create sales agent (admin) |
